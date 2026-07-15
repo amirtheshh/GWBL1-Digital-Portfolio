@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 const links = [
   { label: "Home", to: "/" },
   { label: "Projects", to: "/projects" },
-  { label: "Journey", to: "/journey" },
+  { label: "Internship Journey", to: "/journey" },
   { label: "Reflection", to: "/reflection" },
 ]
 
@@ -65,4 +65,3 @@ function Navbar() {
 }
 
 export default Navbar
-

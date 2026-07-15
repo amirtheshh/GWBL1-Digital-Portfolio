@@ -9,7 +9,7 @@ const sections = [
     content: [
       "My role as a Robotics Research Intern involves a combination of technical research, software development, experimentation, system integration, testing and documentation. Unlike a classroom assignment with a fixed scope and expected answer, the direction of my work can change based on experimental results, technical limitations and feedback from my supervisor.",
 
-      "So far, my responsibilities have included developing the AI & Robotics Services Catalogue, working with Docker and Streamlit, exploring AI perception technologies such as RF-DETR and FoundationPose, testing ROS 2 and Intel RealSense workflows, and supporting the development of an OCR-based meter reading component for a larger robotics project.",
+      "So far, my responsibilities have included developing the AI & Robotics Services Catalogue, working with Docker and Streamlit, exploring AI technologies such as RF-DETR and FoundationPose, testing ROS 2 and Intel RealSense workflows, and supporting the development of an OCR-based meter reading component for a larger robotics project.",
 
       "The work requires me to switch between researching unfamiliar technologies, writing and modifying code, testing hardware and software components, documenting findings and presenting progress. This has helped me understand that research-oriented engineering work is not always linear, and progress can also come from identifying limitations, ruling out unsuitable approaches and improving the way experiments are conducted.",
     ],
@@ -90,10 +90,10 @@ function Reflection() {
 
   return (
     <Layout>
-      <section className="mx-auto max-w-6xl px-6 pb-24 pt-14 md:px-14 md:pt-24">
+      <section className="mx-auto max-w-7xl px-6 pb-24 pt-14 md:px-14 md:pt-24">
         <SectionHeading
           eyebrow="Reflection & Future Outlook"
-          title="Reflecting on my ongoing learning and growth."
+          title="Reflecting On My Ongoing Learning and Growth."
           description="This reflection examines the nature of my current work, the challenges I have faced, the skills I am developing and how the internship is shaping my future direction."
         />
 
@@ -120,7 +120,7 @@ function Reflection() {
           ))}
         </div>
 
-        <Card className="mt-12" interactive={false}>
+        <Card className="mt-12 md:p-12" interactive={false}>
           <p className="text-sm font-bold uppercase tracking-widest">
             Selected Reflection
           </p>

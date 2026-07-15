@@ -34,7 +34,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-16 flex flex-col gap-5 border-t-2 border-black pt-8 text-sm text-[#555555] md:flex-row md:items-center md:justify-between">
-          <p>Copyright 2026 Kumar Amirtheswaran</p>
+          <p>&copy; 2026 Kumar Amirtheswaran</p>
         </div>
       </div>
     </footer>

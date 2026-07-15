@@ -9,11 +9,12 @@ import weekSixImageTwo from "../assets/week6-sam3-segmentation.jpeg"
 import weekSixVideo from "../assets/week6.mp4"
 import weekEightVideo from "../assets/week8.mp4"
 import weekTenImage from "../assets/week10.jpeg"
+import weekTenSyntheticBinDatasetImage from "../assets/week10(1).jpeg"
 import weekTenFlowchartImage from "../assets/week10-ocr-flowchart.png"
 import weekTwoImage from "../assets/week2.jpeg"
 
 export const ongoingTechnicalExploration =
-  "I am also currently exploring a robotics perception workflow involving Intel RealSense, ROS 2, Isaac ROS and AI models such as RF-DETR and FoundationPose. This work focuses on understanding how object detection, segmentation and 6D pose estimation can support robotic perception. The workflow is still under development."
+  "I am also currently contributing to an ongoing robotics visual perception pipeline involving Intel RealSense, ROS 2, Isaac ROS and AI models such as RF-DETR and FoundationPose. This work explores how AI-based object detection, segmentation and 6D pose estimation can support robotic perception tasks. The pipeline is still under active development and experimentation."
 export const projects = [
   {
     slug: "ai-services-catalogue",
@@ -23,7 +24,7 @@ export const projects = [
     period: "April - June 2026",
     tech: "Python, Streamlit, Docker, Docker Compose, YAML, GitLab",
     overview:
-      "A website for browsing, configuring and launching modular AI and robotics services using Docker Compose.",
+      "A web application for browsing, configuring and launching modular AI and robotics services using Docker Compose.",
     deliverable:
       "I worked on an AI & Robotics Services Catalogue. The tool allows service information to be loaded from configuration files and supports Docker Compose generation so that launching services is more reproducible.",
     contribution:
@@ -330,7 +331,7 @@ export const weeks = [
 {
   week: "Week 6",
   dates: "1 - 5 June 2026",
-  focus: "FoundationPose Setup and AI Perception Exploration",
+  focus: "FoundationPose Setup and AI Models Exploration",
   tasks: [
     "Set up NVIDIA Isaac ROS and FoundationPose for robotics perception experiments.",
     "Installed the required dependencies and performed initial testing of the FoundationPose pipeline.",
@@ -340,7 +341,7 @@ export const weeks = [
     "Assisted my supervisor with robot arm experimentation and testing.",
   ],
   learning:
-    "I gained a better understanding of how AI perception models can be incorporated into robotics workflows and learned the importance of configuring the software environment correctly before developing higher-level perception functions.",
+    "I gained a better understanding of how AI models can be incorporated into robotics workflows and learned the importance of configuring the software environment correctly before developing higher-level perception functions.",
   evidence:
     "Isaac ROS installation logs, FoundationPose setup, AI model testing screenshots and development notes.",
   images: [
@@ -382,12 +383,12 @@ export const weeks = [
     "Continued debugging the FoundationPose pipeline from 15 to 17 June.",
     "Investigated methods for evaluating the accuracy and stability of FoundationPose.",
     "Documented the current perception workflow for discussion with my supervisor.",
-    "Planned how the perception pipeline could be extended to support both the water bottle and a grey bin.",
+    "Planned how the perception pipeline could be extended to support both the water bottle and a bin.",
     "Assisted a colleague with robot maintenance and troubleshooting.",
     "Tested the baseline RF-DETR model on industrial objects without additional fine-tuning.",
   ],
   learning:
-    "I developed a better understanding of how robotics perception systems should be evaluated and learned that extending a perception pipeline to support multiple objects requires reliable segmentation, accurate pose estimation and careful workflow planning.",
+    "By using the water bottle as a baseline object for the initial FoundationPose pipeline, I gained a better understanding of how robotics visual perception systems are developed and evaluated. I also learned that extending a perception pipeline to support multiple objects requires reliable segmentation, accurate pose estimation, appropriate 3D object models and careful workflow planning",
   evidence:
     "FoundationPose evaluation notes, workflow documentation, RF-DETR testing results and maintenance records.",
   images: [],
@@ -436,6 +437,11 @@ export const weeks = [
       caption: "Generating a 3D Bin Model from SAM3-Segmented 2D Bin Images.",
     },
     {
+      src: weekTenSyntheticBinDatasetImage,
+      alt: "Week 10 synthetic generated bin dataset screenshot",
+      caption: "Synthetic Generated Bin Dataset.",
+    },
+    {
       src: weekTenFlowchartImage,
       alt: "Week 10 OCR workflow flowchart",
       caption: "OCR Workflow Flowchart",
@@ -448,7 +454,7 @@ export const weeks = [
   focus: "Perception Pipeline Integration and OCR Workflow Development",
   tasks: [
     "Connected the fine-tuned grey bin RF-DETR segmentation output to the FoundationPose pipeline and tested the integrated perception workflow.",
-    "Continued debugging FoundationPose integration issues related to the grey bin.",
+    "Continued debugging FoundationPose integration issues related to the bin.",
     "Developed the OCR-based meter reading workflow for a larger robotics project under my supervisor.",
     "Tested OCR extraction on captured meter images and investigated extraction failures.",
     "Applied image preprocessing techniques to improve OCR accuracy.",

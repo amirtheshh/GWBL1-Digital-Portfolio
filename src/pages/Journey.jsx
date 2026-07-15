@@ -128,8 +128,8 @@ function Journey() {
       <section className="mx-auto max-w-7xl px-6 pb-24 pt-14 md:px-14 md:pt-24">
         <SectionHeading
           eyebrow="Internship Journey"
-          title="Week 1 to Week 11"
-          description="This timeline captures the key tasks, challenges and learning moments that shaped my internship journey each week."
+          title="My Weekly Progress and Learning"
+          description="This timeline captures the key tasks and learning moments that shaped my Internship Journey each week."
         />
 
         <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

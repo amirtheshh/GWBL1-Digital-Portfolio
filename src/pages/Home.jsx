@@ -46,7 +46,7 @@ function Home() {
               </a>
 
               <Link to="/journey" className={buttonClass}>
-                View Journey
+                View Internship Journey
               </Link>
             </div>
           </div>
@@ -93,7 +93,7 @@ function Home() {
           <SectionHeading
             eyebrow="Internship Overview"
             title="Robotics Research Internship"
-            description="My work involves researching and developing AI technologies for robotics applications, including perception systems, computer vision, containerised services and software integration. As this is a research-driven internship, my responsibilities evolve based on project goals and ongoing experimentation."
+            description="My work involves researching, developing, integrating and testing AI technologies for robotics applications, including perception systems, computer vision, containerised services and software integration. As this is a research-driven internship, my responsibilities evolve based on project goals, technical requirements and ongoing experimentation"
           />
 
           <div className="mt-16 grid gap-8 lg:grid-cols-3">
@@ -208,7 +208,7 @@ function Home() {
           <SectionHeading
             eyebrow="Technical Skills & Competencies"
             title="Skills applied to workplace tasks."
-            description="Each competency should eventually be mapped to the Skills Framework for Infocomm Technology with a confirmed TSC name and proficiency level."
+            description="The competencies below represent the technical skills developed and applied in my internship"
           />
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
