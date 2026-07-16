@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation, useNavigate } from "react-router-dom"
 
 const links = [
   { label: "Home", to: "/" },
@@ -11,6 +11,8 @@ const links = [
 
 function Navbar() {
   const [open, setOpen] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   const linkClass = ({ isActive }) => {
     if (isActive) {
@@ -19,6 +21,28 @@ function Navbar() {
 
     return "font-semibold transition hover:underline"
   }
+
+  const scrollToContact = () => {
+    setOpen(false)
+
+    const scroll = () => {
+      document.getElementById("contact")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+
+    if (location.pathname !== "/") {
+      navigate("/")
+      window.setTimeout(scroll, 80)
+      return
+    }
+
+    scroll()
+  }
+
+  const contactClass =
+    "font-semibold transition hover:underline"
 
   return (
     <nav className="mx-auto max-w-7xl px-6 py-8 md:px-14">
@@ -33,6 +57,13 @@ function Navbar() {
               {link.label}
             </NavLink>
           ))}
+          <button
+            type="button"
+            onClick={scrollToContact}
+            className={contactClass}
+          >
+            Contact
+          </button>
         </div>
 
         <button
@@ -58,6 +89,13 @@ function Navbar() {
               {link.label}
             </NavLink>
           ))}
+          <button
+            type="button"
+            onClick={scrollToContact}
+            className={`${contactClass} text-left`}
+          >
+            Contact
+          </button>
         </div>
       )}
     </nav>

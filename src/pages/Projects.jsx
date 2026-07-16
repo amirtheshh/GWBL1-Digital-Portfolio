@@ -89,6 +89,18 @@ function Projects() {
                   </div>
                 </div>
 
+                {project.evidence?.length > 0 && (
+                  <div className="mt-8 max-w-6xl">
+                    <h3 className="text-xl font-black">Evidence Included</h3>
+
+                    <ul className="mt-5 list-disc space-y-3 pl-5 leading-relaxed text-[#444444]">
+                      {project.evidence.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
                 <div className="mt-12 border-t-2 border-black pt-10">
                   <p className="text-sm font-bold uppercase tracking-widest">
                     Knowledge, Skills and Attitudes

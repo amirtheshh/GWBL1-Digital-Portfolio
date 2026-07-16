@@ -14,13 +14,14 @@ import weekTenFlowchartImage from "../assets/week10-ocr-flowchart.png"
 import weekTwoImage from "../assets/week2.jpeg"
 
 export const ongoingTechnicalExploration =
-  "I am also currently contributing to an ongoing robotics visual perception pipeline involving Intel RealSense, ROS 2, Isaac ROS and AI models such as RF-DETR and FoundationPose. This work explores how AI-based object detection, segmentation and 6D pose estimation can support robotic perception tasks. The pipeline is still under active development and experimentation."
+  "I am also currently exploring a robotics visual perception pipeline involving Intel RealSense, ROS 2, Isaac ROS and AI models such as RF-DETR and FoundationPose. This work explores how AI-based object detection, segmentation and 6D pose estimation can support robotic perception tasks. The pipeline is still under active development and experimentation."
 export const projects = [
   {
     slug: "ai-services-catalogue",
     label: "Project 01",
     title: "AI & Robotics Services Catalogue",
     category: "Software Tool Development",
+    role: "Robotics Research Intern",
     period: "April - June 2026",
     tech: "Python, Streamlit, Docker, Docker Compose, YAML, GitLab",
     overview:
@@ -42,6 +43,8 @@ export const projects = [
       "One challenge was handling different service configurations because each AI or robotics service may require different setup, dependencies and launch commands. This made it difficult to debug issues when services failed to launch correctly or had unexpected behaviour.",
     resolution:
       "I addressed this by using a more modular configuration approach, testing services step-by-step and adding live terminal output to help identify where issues occurred during service launch.",
+    result:
+      "The catalogue became a working internal tool that could display AI and robotics services, generate Docker Compose configurations and show launch output for review and further improvement.",
     ksa: {
       knowledge:
         "Docker concepts, service configuration, software integration and robotics and AI service workflows.",
@@ -58,14 +61,23 @@ export const projects = [
       "YAML",
       "GitLab",
     ],
+    evidence: [
+      "Streamlit catalogue interface screenshots",
+      "YAML service configuration structure",
+      "Docker Compose generation output",
+      "Live terminal output and service controls",
+      "GitLab repository and development commits",
+    ],
     images: [
       {
         src: catalogueImageOne,
         alt: "AI and robotics services catalogue interface screenshot",
+        caption: "AI and Robotics Services Catalogue interface.",
       },
       {
         src: catalogueImageTwo,
         alt: "AI and robotics services catalogue service details screenshot",
+        caption: "Service details and launch configuration view.",
       },
     ],
   },
@@ -74,6 +86,7 @@ export const projects = [
     label: "Project 02",
     title: "OCR-Based Digital Meter Reading Workflow",
     category: "Computer Vision and OCR Workflow",
+    role: "Robotics Research Intern",
     period: "July 2026",
     tech: "Python, OpenCV, PaddleOCR, YAML, CSV, Excel",
     overview:
@@ -96,6 +109,8 @@ export const projects = [
       "One challenge was that OCR accuracy depended heavily on image quality, display clarity and preprocessing. A single image version was not always reliable enough for consistent reading extraction.",
     resolution:
       "I tested multiple preprocessing versions such as raw, resized, denoised and sharpened crops, then selected the most suitable valid reading from the OCR candidates.",
+    result:
+      "The workflow produced structured meter-reading outputs that could be reviewed in CSV or Excel format and used as a supporting component for the larger robotics project.",
     ksa: {
       knowledge:
         "OCR workflow design, image preprocessing, computer vision localisation and output validation.",
@@ -125,14 +140,12 @@ export const projects = [
       {
         src: ocrImageOne,
         alt: "OCR workflow meter detection screenshot",
+        caption: "Meter detection and crop workflow.",
       },
       {
         src: ocrImageTwo,
         alt: "OCR preprocessing and extraction output screenshot",
-      },
-      {
-        src: ocrImageThree,
-        alt: "OCR meter reading results screenshot",
+        caption: "Preprocessing and OCR extraction results.",
       },
     ],
   },
@@ -140,44 +153,44 @@ export const projects = [
 
 export const technicalCompetencies = [
   {
-    name: "Python and Application Development",
-    level: "Applied in Workplace",
+    name: "Applications Development",
+    level: "TSC Proficiency Level 3",
     task:
-      "Applied Python while developing the AI & Robotics Services Catalogue and the OCR-Based Digital Meter Reading Workflow. I used it to organise service configurations, process images, parse OCR readings and generate structured CSV and Excel outputs.",
+      "Applied Python to develop software solutions for two different workplace projects. This included building the AI & Robotics Services Catalogue with Streamlit and implementing the OCR-based meter reading workflow using OpenCV and PaddleOCR.",
     improvement:
-      "Further improve how I structure larger Python applications and strengthen validation, automated testing and error handling.",
+      "Strengthen software engineering practices by writing more modular code, improving validation and error handling, and incorporating automated testing where appropriate.",
   },
   {
-    name: "Docker and Containerisation",
-    level: "Applied in Workplace",
+    name: "Applications Integration",
+    level: "TSC Proficiency Level 3",
     task:
-      "Used Docker and Docker Compose to package and run AI and robotics services while configuring dependencies, devices, networking, volumes and runtime settings.",
+      "Integrated multiple software components by connecting Streamlit, YAML configurations and Docker Compose within the catalogue. I also worked with ROS 2, Intel RealSense, RF-DETR and FoundationPose to understand how AI models and robotics software communicate within a perception workflow.",
     improvement:
-      "Develop a deeper understanding of image optimisation, dependency management and deploying containers consistently across workstation and edge-computing environments.",
+      "Develop a deeper understanding of software interfaces, dependency management and integration strategies for larger AI and robotics systems.",
   },
   {
-    name: "Computer Vision and OCR",
-    level: "Applied in Workplace",
+    name: "Software Testing",
+    level: "TSC Proficiency Level 2",
     task:
-      "Applied OpenCV and PaddleOCR in the digital meter-reading workflow. I used computer-vision techniques to locate and crop meter displays, created several preprocessed image versions and extracted possible readings using OCR.",
+      "Tested software under different configurations by validating Docker services, evaluating OCR extraction results, comparing image preprocessing methods and debugging robotics perception workflows. Testing was carried out through repeated experimentation and observation of system behaviour.",
     improvement:
-      "Improve the validation and evaluation of OCR results by testing a larger range of real images and using clearer accuracy measurements.",
+      "Adopt more structured testing methodologies by defining test cases, expected outcomes and quantitative evaluation metrics before experimentation.",
   },
   {
-    name: "ROS 2 and Robotics Software Integration",
-    level: "Developing Foundation",
+    name: "System Integration",
+    level: "TSC Proficiency Level 3",
     task:
-      "Worked with ROS 2 nodes, topics, publishers, subscribers, image messages and live camera streams while testing RealSense, NanoOWL, SAM3, RF-DETR and FoundationPose workflows.",
+      "Worked with robotics software components including ROS 2, Intel RealSense, Isaac ROS, RF-DETR and FoundationPose while integrating camera streams, AI model outputs and software communication within an experimental robotics visual perception pipeline.",
     improvement:
-      "Deepen my understanding of launch files, TF, coordinate frames, Quality of Service settings and the organisation of larger ROS 2 systems.",
+      "Further develop my understanding of ROS 2 architecture, TF and coordinate frames, Quality of Service settings, camera calibration and end-to-end robotics system integration.",
   },
   {
-    name: "Technical Research and Documentation",
-    level: "Applied in Workplace",
+    name: "Technical Research",
+    level: "Developing",
     task:
-      "Reviewed technical documentation, compared different approaches, recorded experimental findings and prepared workflow explanations for progress discussions with my supervisor.",
+      "Researched unfamiliar technologies, reviewed technical documentation, compared implementation approaches and documented experimental findings to support software development and robotics research activities throughout the internship.",
     improvement:
-      "Use more structured experiment plans, clearer evaluation criteria and more consistent documentation of assumptions, limitations and results.",
+      "Improve experiment planning by defining clearer objectives, evaluation criteria and documentation so that results can be reproduced and analysed more systematically.",
   },
 ]
 

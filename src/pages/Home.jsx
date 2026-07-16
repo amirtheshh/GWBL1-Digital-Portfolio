@@ -208,8 +208,7 @@ function Home() {
           <SectionHeading
             eyebrow="Technical Skills & Competencies"
             title="Skills applied to workplace tasks."
-            description="The competencies below represent the technical skills developed and applied in my internship"
-          />
+            description="The competencies below are mapped to relevant Technical Skills and Competencies from the Skills Framework for Infocomm Technology. The proficiency levels reflect the tasks I have demonstrated during my internship, while the improvement areas identify corrective actions for further development."          />
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {technicalCompetencies.map((competency) => (

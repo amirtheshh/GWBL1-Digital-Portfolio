@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 body {
@@ -9,6 +10,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: #151515;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 button,
