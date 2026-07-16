@@ -103,17 +103,17 @@ function Reflection() {
               key={section.title}
               type="button"
               onClick={() => setSelectedTitle(section.title)}
-              className={`border-2 border-black p-6 text-left transition duration-300 ${
+              className={`motion-card motion-reveal border-2 border-black p-6 text-left transition duration-300 ${
                 selectedTitle === section.title
                   ? "bg-black text-white shadow-[8px_8px_0px_#777777]"
                   : "bg-white shadow-[8px_8px_0px_#111111] hover:-translate-y-2 hover:shadow-[14px_14px_0px_#111111]"
               }`}
             >
-              <p className="text-sm font-bold uppercase tracking-widest">
+              <p className="type-eyebrow">
                 Section
               </p>
 
-              <h2 className="mt-3 text-2xl font-black">
+              <h2 className="type-card-title mt-3">
                 {section.title}
               </h2>
             </button>
@@ -121,11 +121,11 @@ function Reflection() {
         </div>
 
         <Card className="mt-12 md:p-12" interactive={false}>
-          <p className="text-sm font-bold uppercase tracking-widest">
+          <p className="type-eyebrow">
             Selected Reflection
           </p>
 
-          <h2 className="mt-4 text-3xl font-black">
+          <h2 className="type-card-title-lg mt-4">
             {selectedSection.title}
           </h2>
 
@@ -133,7 +133,7 @@ function Reflection() {
             {selectedSection.content.map((paragraph) => (
               <p
                 key={paragraph}
-                className="text-lg leading-relaxed text-[#444444]"
+                className="type-body-lg"
               >
                 {paragraph}
               </p>

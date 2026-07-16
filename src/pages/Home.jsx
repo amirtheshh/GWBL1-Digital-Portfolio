@@ -12,11 +12,9 @@ import {
 import profileImage from "../assets/profile.jpeg"
 
 function Home() {
-  const buttonClass =
-    "inline-flex items-center justify-center rounded-full border-2 border-black bg-transparent px-7 py-4 font-bold transition hover:bg-black hover:text-white"
+  const buttonClass = "button-link"
 
-  const badgeClass =
-    "rounded-full border-2 border-black bg-[#F7F5F0] px-6 py-3 text-sm font-bold"
+  const badgeClass = "badge-pill"
 
   return (
     <Layout showFooter>
@@ -24,15 +22,15 @@ function Home() {
       <section className="mx-auto max-w-7xl px-6 pb-20 pt-12 md:px-14 md:pt-24">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.25em]">
+            <p className="type-eyebrow">
               Guided Work-Based Learning Digital Portfolio
             </p>
 
-            <h1 className="mt-8 max-w-3xl text-5xl font-black leading-[0.95] tracking-tight md:text-6xl">
+            <h1 className="type-page-title mt-8 max-w-3xl">
               Robotics Research Intern at A*STAR
             </h1>
 
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[#444444] md:text-xl">
+            <p className="type-body-lg mt-8 max-w-2xl">
               I am Kumar Amirtheswaran, a Year 3 Applied Artificial
               Intelligence student at Temasek Polytechnic, currently doing my
               internship at A*STAR's Advanced Remanufacturing and Technology
@@ -52,7 +50,7 @@ function Home() {
           </div>
 
           <div className="relative flex min-h-[520px] items-center justify-center">
-            <div className="relative h-[420px] w-[330px] rotate-[-3deg] border-2 border-black bg-white shadow-[18px_18px_0px_#111111] transition duration-300 hover:-translate-y-2 hover:shadow-[24px_24px_0px_#111111] md:h-[520px] md:w-[420px]">
+            <div className="hero-portrait relative h-[420px] w-[330px] rotate-[-3deg] border-2 border-black bg-white shadow-[18px_18px_0px_#111111] transition duration-300 hover:-translate-y-2 hover:shadow-[24px_24px_0px_#111111] md:h-[520px] md:w-[420px]">
               <div className="absolute inset-8 border-2 border-black">
                 <div className="absolute left-8 right-8 top-8 h-[280px] overflow-hidden border-2 border-black bg-[#EFECE6]">
                   <img
@@ -63,22 +61,22 @@ function Home() {
                 </div>
 
                 <div className="absolute bottom-10 left-8 right-8">
-                  <p className="text-sm font-bold uppercase tracking-widest">
+                  <p className="type-eyebrow">
                     Diploma in Applied Artificial Intelligence
                   </p>
 
-                  <p className="mt-3 text-lg font-black">
+                  <p className="type-field-label mt-3">
                     Temasek Polytechnic
                   </p>
                 </div>
               </div>
 
-              <div className={`absolute -top-6 right-2 z-20 ${badgeClass}`}>
+              <div className={`motion-badge absolute -top-6 right-2 z-20 ${badgeClass}`}>
                 A*STAR Research Intern
               </div>
 
               <div
-                className={`absolute -bottom-8 -left-4 md:-left-10 ${badgeClass}`}
+                className={`motion-badge absolute -bottom-8 -left-4 md:-left-10 ${badgeClass}`}
               >
                 AI / Robotics / Research
               </div>
@@ -98,26 +96,26 @@ function Home() {
 
           <div className="mt-16 grid gap-8 lg:grid-cols-3">
             <Card>
-              <p className="text-sm font-bold uppercase tracking-widest">
+              <p className="type-eyebrow">
                 Company
               </p>
 
-              <h3 className="mt-4 text-2xl font-black">A*STAR</h3>
+              <h3 className="type-card-title mt-4">A*STAR</h3>
 
-              <p className="mt-4 leading-relaxed text-[#444444]">
+              <p className="type-body mt-4">
                 The Agency for Science, Technology and Research is Singapore's
                 public-sector research organisation.
               </p>
             </Card>
 
             <Card>
-              <p className="text-sm font-bold uppercase tracking-widest">
+              <p className="type-eyebrow">
                 Research Institute
               </p>
 
-              <h3 className="mt-4 text-2xl font-black">ARTC</h3>
+              <h3 className="type-card-title mt-4">ARTC</h3>
 
-              <p className="mt-4 leading-relaxed text-[#444444]">
+              <p className="type-body mt-4">
                 The Advanced Remanufacturing and Technology Centre develops
                 technologies for advanced manufacturing and industrial
                 applications.
@@ -125,15 +123,15 @@ function Home() {
             </Card>
 
             <Card>
-              <p className="text-sm font-bold uppercase tracking-widest">
+              <p className="type-eyebrow">
                 Department
               </p>
 
-              <h3 className="mt-4 text-2xl font-black">
+              <h3 className="type-card-title mt-4">
                 Autonomous Systems and Robotics (ASR)
               </h3>
 
-              <p className="mt-4 leading-relaxed text-[#444444]">
+              <p className="type-body mt-4">
                 The Autonomous Systems and Robotics department develops robotic
                 systems and automation technologies for industrial applications.
                 Its work includes process robotisation, mobile robotics,
@@ -162,20 +160,20 @@ function Home() {
           <div className="mt-16 grid gap-10 lg:grid-cols-2">
             {projects.map((project) => (
               <Card key={project.slug}>
-                <p className="text-sm font-bold uppercase tracking-widest">
+                <p className="type-eyebrow">
                   {project.label}
                 </p>
 
-                <h3 className="mt-4 text-3xl font-black">{project.title}</h3>
+                <h3 className="type-card-title-lg mt-4">{project.title}</h3>
 
-                <p className="mt-6 leading-relaxed text-[#444444]">
+                <p className="type-body mt-6">
                   {project.overview}
                 </p>
 
                 <div className="mt-8">
-                  <p className="font-black">My Contribution</p>
+                  <p className="type-field-label">My Contribution</p>
 
-                  <p className="mt-2 leading-relaxed text-[#444444]">
+                  <p className="type-body mt-2">
                     {project.contribution}
                   </p>
                 </div>
@@ -191,11 +189,11 @@ function Home() {
           </div>
 
           <Card className="mt-12">
-            <h3 className="text-3xl font-black">
+            <h3 className="type-card-title-lg">
               Ongoing Technical Exploration
             </h3>
 
-            <p className="mt-4 max-w-5xl leading-relaxed text-[#444444]">
+            <p className="type-body mt-4 max-w-5xl">
               {ongoingTechnicalExploration}
             </p>
           </Card>
@@ -210,24 +208,24 @@ function Home() {
             title="Skills applied to workplace tasks."
             description="The competencies below are mapped to relevant Technical Skills and Competencies from the Skills Framework for Infocomm Technology. The proficiency levels reflect the tasks I have demonstrated during my internship, while the improvement areas identify corrective actions for further development."          />
 
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-8 md:grid-cols-2">
             {technicalCompetencies.map((competency) => (
               <Card key={competency.name}>
-                <p className="text-sm font-bold uppercase tracking-widest">
+                <p className="type-eyebrow">
                   {competency.level}
                 </p>
 
-                <h3 className="mt-4 text-2xl font-black">
+                <h3 className="type-card-title mt-4">
                   {competency.name}
                 </h3>
 
-                <p className="mt-4 leading-relaxed text-[#444444]">
+                <p className="type-body mt-4">
                   {competency.task}
                 </p>
 
-                <p className="mt-6 font-black">Improvement Area</p>
+                <p className="type-field-label mt-6">Improvement Area</p>
 
-                <p className="mt-2 text-[#444444]">
+                <p className="type-body mt-2">
                   {competency.improvement}
                 </p>
               </Card>
@@ -249,23 +247,23 @@ function Home() {
           <div className="mt-16 grid gap-8 md:grid-cols-2">
             {criticalCoreSkills.map((skill) => (
               <Card key={skill.name}>
-                <h3 className="text-2xl font-black">{skill.name}</h3>
+                <h3 className="type-card-title">{skill.name}</h3>
 
-                <p className="mt-5 font-black">Task</p>
+                <p className="type-field-label mt-5">Task</p>
 
-                <p className="mt-2 leading-relaxed text-[#444444]">
+                <p className="type-body mt-2">
                   {skill.task}
                 </p>
 
-                <p className="mt-5 font-black">Actions Taken</p>
+                <p className="type-field-label mt-5">Actions Taken</p>
 
-                <p className="mt-2 leading-relaxed text-[#444444]">
+                <p className="type-body mt-2">
                   {skill.actions}
                 </p>
 
-                <p className="mt-5 font-black">Result</p>
+                <p className="type-field-label mt-5">Result</p>
 
-                <p className="mt-2 leading-relaxed text-[#444444]">
+                <p className="type-body mt-2">
                   {skill.result}
                 </p>
               </Card>

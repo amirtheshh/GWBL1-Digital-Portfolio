@@ -22,25 +22,25 @@ const getDisplayWeeks = () =>
 function WeekDetail({ item }) {
   return (
     <Card className="mt-12" interactive={false}>
-      <p className="text-sm font-bold uppercase tracking-widest">
+      <p className="type-eyebrow">
         Selected Week
       </p>
 
-      <h2 className="mt-4 text-3xl font-black">{item.week}</h2>
+      <h2 className="type-card-title-lg mt-4">{item.week}</h2>
 
-      <p className="mt-3 text-sm font-bold uppercase tracking-widest text-[#555555]">
+      <p className="type-eyebrow mt-3 text-[#555555]">
         {item.dates}
       </p>
 
-      <h3 className="mt-5 text-2xl font-black">{item.focus}</h3>
+      <h3 className="type-card-title mt-5">{item.focus}</h3>
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
         <div>
-          <p className="text-sm font-bold uppercase tracking-widest">
+          <p className="type-eyebrow">
             Tasks Completed
           </p>
 
-          <ul className="mt-5 list-disc space-y-3 pl-5 leading-relaxed text-[#444444]">
+          <ul className="type-body mt-5 list-disc space-y-3 pl-5">
             {item.tasks.map((task) => (
               <li key={task}>{task}</li>
             ))}
@@ -48,11 +48,11 @@ function WeekDetail({ item }) {
         </div>
 
         <div>
-          <p className="text-sm font-bold uppercase tracking-widest">
+          <p className="type-eyebrow">
             Learning Point
           </p>
 
-          <p className="mt-5 leading-relaxed text-[#444444]">
+          <p className="type-body mt-5">
             {item.learning}
           </p>
         </div>
@@ -61,7 +61,7 @@ function WeekDetail({ item }) {
       {(item.images?.length > 0 || item.videos?.length > 0) && (
         <div className="mt-12 border-t-2 border-black pt-8">
           <div className="mb-8">
-            <p className="text-sm font-bold uppercase tracking-widest">
+            <p className="type-eyebrow">
               Visual Evidence
             </p>
           </div>
@@ -82,7 +82,7 @@ function WeekDetail({ item }) {
                 </div>
 
                 {image.caption && (
-                  <figcaption className="border-t-2 border-black px-6 py-5 text-sm leading-relaxed text-[#555555]">
+                  <figcaption className="type-caption border-t-2 border-black px-6 py-5">
                     {image.caption}
                   </figcaption>
                 )}
@@ -105,7 +105,7 @@ function WeekDetail({ item }) {
                 </div>
 
                 {video.title && (
-                  <figcaption className="border-t-2 border-black px-6 py-5 text-sm leading-relaxed text-[#555555]">
+                  <figcaption className="type-caption border-t-2 border-black px-6 py-5">
                     {video.title}
                   </figcaption>
                 )}
@@ -138,21 +138,21 @@ function Journey() {
               key={item.week}
               type="button"
               onClick={() => setSelectedWeekIndex(index)}
-              className={`border-2 border-black p-6 text-left transition duration-300 ${
+              className={`motion-card motion-reveal border-2 border-black p-6 text-left transition duration-300 ${
                 selectedWeekIndex === index
                   ? "bg-black text-white shadow-[8px_8px_0px_#777777]"
                   : "bg-white shadow-[8px_8px_0px_#111111] hover:-translate-y-2 hover:shadow-[14px_14px_0px_#111111]"
               }`}
             >
               <p
-                className={`text-sm font-bold uppercase tracking-widest ${
+                className={`type-eyebrow ${
                   selectedWeekIndex === index ? "text-white" : "text-[#555555]"
                 }`}
               >
                 {item.week} - {item.dates}
               </p>
 
-              <h2 className="mt-3 text-2xl font-black">{item.focus}</h2>
+              <h2 className="type-card-title mt-3">{item.focus}</h2>
             </button>
           ))}
         </div>

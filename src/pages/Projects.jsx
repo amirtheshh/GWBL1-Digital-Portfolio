@@ -18,14 +18,14 @@ function Projects() {
           {projects.map((project) => (
             <article
               key={project.slug}
-              className="border-2 border-black bg-white p-8 shadow-[10px_10px_0px_#111111] transition-all duration-300 hover:-translate-x-1 hover:-translate-y-2 hover:shadow-[16px_16px_0px_#111111] md:p-12"
+              className="motion-card motion-reveal border-2 border-black bg-white p-8 shadow-[10px_10px_0px_#111111] transition-all duration-300 hover:-translate-x-1 hover:-translate-y-2 hover:shadow-[16px_16px_0px_#111111] md:p-12"
             >
               <div>
-                <p className="text-sm font-bold uppercase tracking-widest">
+                <p className="type-eyebrow">
                   {project.label}
                 </p>
 
-                <h2 className="mt-4 text-4xl font-black">
+                <h2 className="type-article-title mt-4">
                   {project.title}
                 </h2>
 
@@ -35,31 +35,31 @@ function Projects() {
                   {project.period && <Tag>{project.period}</Tag>}
                 </div>
 
-                <p className="mt-6 max-w-5xl text-lg leading-relaxed text-[#444444]">
+                <p className="type-body-lg mt-6 max-w-5xl">
                   {project.overview}
                 </p>
 
                 {project.deliverable && (
                   <div className="mt-10 max-w-6xl">
-                    <h3 className="text-xl font-black">
+                    <h3 className="type-subtitle">
                       Brief Description & Deliverable
                     </h3>
 
-                    <p className="mt-3 leading-relaxed text-[#444444]">
+                    <p className="type-body mt-3">
                       {project.deliverable}
                     </p>
                   </div>
                 )}
 
                 <div className="mt-8 max-w-6xl">
-                  <h3 className="text-xl font-black">My Contribution</h3>
+                  <h3 className="type-subtitle">My Contribution</h3>
 
-                  <p className="mt-3 leading-relaxed text-[#444444]">
+                  <p className="type-body mt-3">
                     {project.contribution}
                   </p>
 
                   {project.detailedContribution?.length > 0 && (
-                    <ul className="mt-5 list-disc space-y-3 pl-5 leading-relaxed text-[#444444]">
+                    <ul className="type-body mt-5 list-disc space-y-3 pl-5">
                       {project.detailedContribution.map((item) => (
                         <li key={item}>{item}</li>
                       ))}
@@ -69,18 +69,18 @@ function Projects() {
 
                 {project.usage && (
                   <div className="mt-8 max-w-6xl">
-                    <h3 className="text-xl font-black">
+                    <h3 className="type-subtitle">
                       How It Will Be Used
                     </h3>
 
-                    <p className="mt-3 leading-relaxed text-[#444444]">
+                    <p className="type-body mt-3">
                       {project.usage}
                     </p>
                   </div>
                 )}
 
                 <div className="mt-8">
-                  <h3 className="text-xl font-black">Technical Skills</h3>
+                  <h3 className="type-subtitle">Technical Skills</h3>
 
                   <div className="mt-4 flex flex-wrap gap-3">
                     {project.skills.map((skill) => (
@@ -91,9 +91,9 @@ function Projects() {
 
                 {project.evidence?.length > 0 && (
                   <div className="mt-8 max-w-6xl">
-                    <h3 className="text-xl font-black">Evidence Included</h3>
+                    <h3 className="type-subtitle">Evidence Included</h3>
 
-                    <ul className="mt-5 list-disc space-y-3 pl-5 leading-relaxed text-[#444444]">
+                    <ul className="type-body mt-5 list-disc space-y-3 pl-5">
                       {project.evidence.map((item) => (
                         <li key={item}>{item}</li>
                       ))}
@@ -102,31 +102,27 @@ function Projects() {
                 )}
 
                 <div className="mt-12 border-t-2 border-black pt-10">
-                  <p className="text-sm font-bold uppercase tracking-widest">
-                    Knowledge, Skills and Attitudes
-                  </p>
-
-                  <div className="mt-8 grid gap-10 md:grid-cols-3">
+                  <div className="grid gap-10 md:grid-cols-3">
                     <div>
-                      <h3 className="text-xl font-black">Knowledge</h3>
+                      <h3 className="type-subtitle">Knowledge</h3>
 
-                      <p className="mt-3 leading-relaxed text-[#444444]">
+                      <p className="type-body mt-3">
                         {project.ksa?.knowledge}
                       </p>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-black">Skills</h3>
+                      <h3 className="type-subtitle">Skills</h3>
 
-                      <p className="mt-3 leading-relaxed text-[#444444]">
+                      <p className="type-body mt-3">
                         {project.ksa?.skills}
                       </p>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-black">Attitudes</h3>
+                      <h3 className="type-subtitle">Attitudes</h3>
 
-                      <p className="mt-3 leading-relaxed text-[#444444]">
+                      <p className="type-body mt-3">
                         {project.ksa?.attitudes}
                       </p>
                     </div>
@@ -136,31 +132,31 @@ function Projects() {
                 <div className="mt-12 border-t-2 border-black pt-10">
                   <div className="grid gap-10 md:grid-cols-3">
                     <div>
-                      <p className="text-sm font-bold uppercase tracking-widest">
+                      <h3 className="type-subtitle">
                         Challenge
-                      </p>
+                      </h3>
 
-                      <p className="mt-4 leading-relaxed text-[#555555]">
+                      <p className="type-body mt-3">
                         {project.challenge}
                       </p>
                     </div>
 
                     <div>
-                      <p className="text-sm font-bold uppercase tracking-widest">
+                      <h3 className="type-subtitle">
                         Action
-                      </p>
+                      </h3>
 
-                      <p className="mt-4 leading-relaxed text-[#555555]">
+                      <p className="type-body mt-3">
                         {project.resolution}
                       </p>
                     </div>
 
                     <div>
-                      <p className="text-sm font-bold uppercase tracking-widest">
+                      <h3 className="type-subtitle">
                         Result
-                      </p>
+                      </h3>
 
-                      <p className="mt-4 leading-relaxed text-[#555555]">
+                      <p className="type-body mt-3">
                         {project.result ??
                           "The project became a clearer and more structured deliverable that could be reviewed, demonstrated and improved based on feedback."}
                       </p>
@@ -171,7 +167,7 @@ function Projects() {
                 {project.images?.length > 0 && (
                   <div className="mt-12 border-t-2 border-black pt-10">
                     <div className="mb-8">
-                      <p className="text-sm font-bold uppercase tracking-widest">
+                      <p className="type-eyebrow">
                         Visual Evidence
                       </p>
                     </div>
@@ -192,7 +188,7 @@ function Projects() {
                           </div>
 
                           {image.caption && (
-                            <figcaption className="border-t-2 border-black px-6 py-5 text-sm leading-relaxed text-[#555555]">
+                            <figcaption className="type-caption border-t-2 border-black px-6 py-5">
                               {image.caption}
                             </figcaption>
                           )}

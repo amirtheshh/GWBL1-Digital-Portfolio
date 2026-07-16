@@ -16,10 +16,10 @@ function Navbar() {
 
   const linkClass = ({ isActive }) => {
     if (isActive) {
-      return "font-black underline transition hover:underline"
+      return "nav-link nav-link-active"
     }
 
-    return "font-semibold transition hover:underline"
+    return "nav-link"
   }
 
   const scrollToContact = () => {
@@ -41,13 +41,12 @@ function Navbar() {
     scroll()
   }
 
-  const contactClass =
-    "font-semibold transition hover:underline"
+  const contactClass = "nav-link"
 
   return (
     <nav className="mx-auto max-w-7xl px-6 py-8 md:px-14">
       <div className="flex items-center justify-end">
-        <div className="hidden items-center gap-10 text-sm md:flex">
+        <div className="hidden items-center gap-10 md:flex">
           {links.map((link) => (
             <NavLink
               key={link.to}
@@ -68,7 +67,7 @@ function Navbar() {
 
         <button
           type="button"
-          className="rounded-full border-2 border-black bg-transparent px-5 py-2.5 text-sm font-bold transition hover:bg-black hover:text-white md:hidden"
+          className="button-link button-link-sm md:hidden"
           onClick={() => setOpen((current) => !current)}
           aria-expanded={open}
           aria-label="Toggle navigation menu"
@@ -78,7 +77,7 @@ function Navbar() {
       </div>
 
       {open && (
-        <div className="mt-6 grid gap-4 border-2 border-black bg-[#F7F5F0] p-5 text-sm md:hidden">
+        <div className="mt-6 grid gap-4 border-2 border-black bg-[#F7F5F0] p-5 md:hidden">
           {links.map((link) => (
             <NavLink
               key={link.to}

@@ -1,6 +1,6 @@
 function Card({ children, className = "", interactive = true }) {
   const interactiveClasses =
-    "shadow-[8px_8px_0px_#111111] transition duration-300 hover:-translate-y-2 hover:shadow-[14px_14px_0px_#111111]"
+    "motion-card motion-reveal shadow-[8px_8px_0px_#111111] transition duration-300 hover:-translate-y-2 hover:shadow-[14px_14px_0px_#111111]"
 
   return (
     <article

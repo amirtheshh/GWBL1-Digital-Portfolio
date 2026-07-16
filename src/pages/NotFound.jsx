@@ -5,9 +5,9 @@ function NotFound() {
   return (
     <Layout>
       <section className="mx-auto max-w-4xl px-6 py-32 text-center md:px-14">
-        <p className="text-sm font-bold uppercase tracking-[0.25em]">404</p>
-        <h1 className="mt-8 text-5xl font-black">Page not found.</h1>
-        <Link to="/" className="mt-10 inline-block rounded-full border-2 border-black px-7 py-4 font-bold transition hover:bg-black hover:text-white">Return Home</Link>
+        <p className="type-eyebrow">404</p>
+        <h1 className="type-page-title mt-8">Page not found.</h1>
+        <Link to="/" className="button-link mt-10">Return Home</Link>
       </section>
     </Layout>
   )
