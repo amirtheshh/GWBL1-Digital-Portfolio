@@ -55,7 +55,7 @@ const sections = [
     ],
   },
   {
-    title: "Critical Reflection",
+    title: "Areas for Improvement",
     content: [
       "One aspect I am continuing to improve is the way I plan experiments. Some early testing was exploratory and was not always recorded in a consistent format. This made it harder to compare results across different configurations.",
 
@@ -93,8 +93,8 @@ function Reflection() {
       <section className="mx-auto max-w-7xl px-6 pb-24 pt-14 md:px-14 md:pt-24">
         <SectionHeading
           eyebrow="Reflection & Future Outlook"
-          title="Reflecting On My Ongoing Learning and Growth."
-          description="This reflection examines the nature of my current work, the challenges I have faced, the skills I am developing and how the internship is shaping my future direction."
+          title="Reflecting on my ongoing learning and growth."
+          description="This reflection shares the nature of my current work, the challenges I have faced, the skills I am developing and how the internship is shaping my future direction."
         />
 
         <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

@@ -10,7 +10,7 @@ function Projects() {
       <section className="mx-auto max-w-7xl px-6 pb-24 pt-14 md:px-14 md:pt-24">
         <SectionHeading
           eyebrow="Projects"
-          title="Digital Evidence from Workplace Projects."
+          title="Digital evidence from workplace projects."
           description="Each project shows the deliverable, my contribution, intended use, technical skills, evidence, challenges, actions and outcomes."
         />
 

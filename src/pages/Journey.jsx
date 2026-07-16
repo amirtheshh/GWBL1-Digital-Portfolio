@@ -128,7 +128,7 @@ function Journey() {
       <section className="mx-auto max-w-7xl px-6 pb-24 pt-14 md:px-14 md:pt-24">
         <SectionHeading
           eyebrow="Internship Journey"
-          title="My Weekly Progress and Learning"
+          title="My weekly progress and learning"
           description="This timeline captures the key tasks and learning moments that shaped my Internship Journey each week."
         />
 

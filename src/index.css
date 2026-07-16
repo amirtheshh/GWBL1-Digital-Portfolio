@@ -263,6 +263,7 @@ a {
       animation-range: entry 8% cover 28%;
       animation-timeline: view();
     }
+
   }
 
   @media (prefers-reduced-motion: reduce) {
