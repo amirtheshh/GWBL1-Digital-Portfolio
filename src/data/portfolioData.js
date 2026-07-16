@@ -453,11 +453,6 @@ export const weeks = [
       alt: "Week 10 synthetic generated bin dataset screenshot",
       caption: "Synthetic Generated Bin Dataset.",
     },
-    {
-      src: weekTenFlowchartImage,
-      alt: "Week 10 OCR workflow flowchart",
-      caption: "OCR Workflow Flowchart",
-    },
   ],
 },
 {
