@@ -220,31 +220,6 @@ a {
     overflow: hidden;
   }
 
-  .motion-card::after {
-    background: linear-gradient(
-      115deg,
-      transparent 0%,
-      transparent 38%,
-      rgb(255 255 255 / 0.55) 48%,
-      transparent 58%,
-      transparent 100%
-    );
-    content: "";
-    inset: 0;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    transform: translateX(-120%);
-    transition:
-      opacity 220ms ease,
-      transform 650ms ease;
-  }
-
-  .motion-card:hover::after {
-    opacity: 1;
-    transform: translateX(120%);
-  }
-
   .hero-portrait {
     animation: soft-float 6s ease-in-out infinite;
   }

@@ -170,6 +170,12 @@ function Projects() {
                       <p className="type-eyebrow">
                         Visual Evidence
                       </p>
+
+                      {project.visualNote && (
+                        <p className="type-body mt-4 max-w-4xl border-2 border-black bg-yellow-100 px-5 py-4 font-semibold">
+                          {project.visualNote}
+                        </p>
+                      )}
                     </div>
 
                     <div className="space-y-10">

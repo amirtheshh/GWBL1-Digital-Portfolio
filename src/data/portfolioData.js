@@ -135,6 +135,8 @@ export const projects = [
       "Excel output screenshot",
       "Code structure screenshot",
     ],
+    visualNote:
+      "Note: Actual gauge images have been excluded because they are confidential.",
     images: [
       {
         src: ocrImageOne,

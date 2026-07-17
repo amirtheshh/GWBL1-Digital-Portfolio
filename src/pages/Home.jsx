@@ -251,19 +251,19 @@ function Home() {
 
                 <p className="type-field-label mt-5">Task</p>
 
-                <p className="type-body mt-2">
+                <p className="mt-2 text-base font-normal leading-[1.75] text-black">
                   {skill.task}
                 </p>
 
                 <p className="type-field-label mt-5">Actions Taken</p>
 
-                <p className="type-body mt-2">
+                <p className="mt-2 text-base font-normal leading-[1.75] text-black">
                   {skill.actions}
                 </p>
 
                 <p className="type-field-label mt-5">Result</p>
 
-                <p className="type-body mt-2">
+                <p className="mt-2 text-base font-normal leading-[1.75] text-black">
                   {skill.result}
                 </p>
               </Card>
